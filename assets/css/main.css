@@ -19,10 +19,10 @@
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
-  --background-color: #000000; /* Background color for the entire website, including individual sections */
+  --background-color: #272727; /* Background color for the entire website, including individual sections */
   --default-color: #fafafa; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #ffffff; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #18d26e; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --accent-color: #972488; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #1a1a1a; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #000000; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
@@ -30,11 +30,11 @@
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
   --nav-color: #fafafa;  /* The default color of the main navmenu links */
-  --nav-hover-color: #18d26e; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-hover-color: #c318d2; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #1a1a1a; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #1a1a1a; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #fafafa; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #18d26e; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-dropdown-hover-color: #cc18d2; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -161,7 +161,7 @@ h6 {
 }
 
 .header .logo h1 {
-  font-size: 30px;
+  font-size: 40px;
   margin: 0;
   font-weight: 700;
   color: var(--heading-color);
@@ -210,7 +210,7 @@ h6 {
   .navmenu a,
   .navmenu a:focus {
     color: var(--nav-color);
-    font-size: 15px;
+    font-size: 20px;
     padding: 0 2px;
     font-family: var(--nav-font);
     font-weight: 400;
@@ -444,7 +444,7 @@ h6 {
 .footer {
   color: var(--default-color);
   background-color: var(--background-color);
-  font-size: 14px;
+  font-size: 16px;
   text-align: center;
   padding: 30px 0;
   position: relative;
@@ -1055,9 +1055,9 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Habilidades Section
+# Skills Section
 --------------------------------------------------------------*/
-.habilidades .service-item {
+.skills .service-item {
   background-color: var(--surface-color);
   text-align: center;
   padding: 80px 20px;
@@ -1065,7 +1065,7 @@ section,
   height: 100%;
 }
 
-.habilidades .service-item .icon {
+.skills .service-item .icon {
   margin: 0 auto;
   width: 64px;
   height: 64px;
@@ -1079,13 +1079,13 @@ section,
   transform-style: preserve-3d;
 }
 
-.habilidades .service-item .icon i {
+.skills .service-item .icon i {
   color: var(--contrast-color);
   font-size: 28px;
   transition: ease-in-out 0.3s;
 }
 
-.habilidades .service-item .icon::before {
+.skills .service-item .icon::before {
   position: absolute;
   content: "";
   left: -8px;
@@ -1098,51 +1098,51 @@ section,
   transform: translateZ(-1px);
 }
 
-.habilidades .service-item h3 {
+.skills .service-item h3 {
   font-weight: 700;
   margin: 10px 0 15px 0;
   font-size: 22px;
 }
 
-.habilidades .service-item p {
+.skills .service-item p {
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
 }
 
-.habilidades .service-item:hover {
+.skills .service-item:hover {
   background: var(--accent-color);
   border-color: var(--accent-color);
 }
 
-.habilidades .service-item:hover .icon {
+.skills .service-item:hover .icon {
   background: var(--surface-color);
 }
 
-.habilidades .service-item:hover .icon i {
+.skills .service-item:hover .icon i {
   color: var(--accent-color);
 }
 
-.habilidades .service-item:hover .icon::before {
+.skills .service-item:hover .icon::before {
   background: color-mix(in srgb, var(--background-color), transparent 70%);
 }
 
-.habilidades .service-item:hover h3,
-.habilidades .service-item:hover p {
+.skills .service-item:hover h3,
+.skills .service-item:hover p {
   color: var(--contrast-color);
 }
 
 /*--------------------------------------------------------------
 # Service Details Section
 --------------------------------------------------------------*/
-.service-details .habilidades-list {
+.service-details .skills-list {
   background-color: var(--surface-color);
   padding: 10px 30px;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
   margin-bottom: 20px;
 }
 
-.service-details .habilidades-list a {
+.service-details .skills-list a {
   display: block;
   line-height: 1;
   padding: 8px 0 8px 15px;
@@ -1152,17 +1152,17 @@ section,
   transition: 0.3s;
 }
 
-.service-details .habilidades-list a.active {
+.service-details .skills-list a.active {
   color: var(--heading-color);
   font-weight: 700;
   border-color: var(--accent-color);
 }
 
-.service-details .habilidades-list a:hover {
+.service-details .skills-list a:hover {
   border-color: var(--accent-color);
 }
 
-.service-details .habilidades-img {
+.service-details .skills-img {
   margin-bottom: 20px;
 }
 
